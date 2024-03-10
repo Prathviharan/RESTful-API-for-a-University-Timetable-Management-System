@@ -53,7 +53,7 @@ exports.logout = (req,res) =>{
 
 
 //Middleware 
-exports.verifyTokenAndRole = (role) => req, res, next => {
+exports.verifyTokenAndRole = (role) => (req, res, next) => {
     const token = req.headers.authorization && req.headers.authorization.split(' ')[1];
     //check token
     if(!token){

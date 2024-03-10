@@ -40,3 +40,8 @@ database.on('error',(error) => {
 database.once('connected',() => {
     console.log('Database Connected');
 })
+
+
+app.use('/api/auth/',require('./routes/authroute'));
+
+module.exports = app;
