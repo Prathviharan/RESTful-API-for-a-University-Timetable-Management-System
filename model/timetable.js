@@ -9,11 +9,11 @@ const timetableSchema = new mongoose.Schema({
 
     sessions:[{
         date: {
-            type: String,
+            type: Date,
             required: true
         },
         time: {
-            type: String,
+            type: Date,
             required: true
         },
         faculty: {
