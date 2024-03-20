@@ -1,5 +1,5 @@
 const course = require('../model/course');
-const course = require('../model/course');
+
 
 //create new course
 exports.createcourse = async(req,res) => {

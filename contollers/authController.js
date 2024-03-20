@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const user = require('../model/user');
 
 const users = [
     {id:1 , username: 'admin', password: '',role:'admin'},
@@ -8,7 +9,7 @@ const users = [
 ];
 
 //JWT token secret key
-const secretKey = '';
+const secretKey = '1234';
 
 const generateToken = (user) => {
     return jwt.sign({
